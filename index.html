@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
 <html lang="zh-CN"><head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="renderer" content="webkit">
@@ -91,15 +91,7 @@ input.form-control.keyword {
 <div class="info">
 	如信息登记有误，请联系管理员（电话：010-59507218）。
 </div>
-<script>
-	$.get(config.rootUrl+"match/public/search-score2?token=116242616aa8a6c546d1a7a5144f3937&ticket_id=C21023138204432").done(function(r){
-	if(r['error']==0){
-		$(".result").html(r['html']);
-	}else{
-		$.tools.showErrorMessage("不存在查询结果！");
-	}
-});
-</script>
+
 	
 
 <script src="chrome-extension://cakceedajpopjhclmeobmeedhdficlpd/static/js/inject.js" type="text/javascript" async=""></script></body></html>
