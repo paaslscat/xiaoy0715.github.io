@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<title></title>
+		<link href="https://s.lscat.cn/assets/css-compress/7fe1cb20c962e6e3d0d9c9b0d3eb3f9f.css?v=1684223910" rel="stylesheet">
+<script src="https://s.lscat.cn/assets/js-compress/556a33bfcb3159fd9f0d285121f9907f.js?v=1680582576"></script>	<style type="text/css">#_copy{align-items:center;background:#4494d5;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-size:13px;height:30px;justify-content:center;position:absolute;width:60px;z-index:1000}#select-tooltip,#sfModal,.modal-backdrop,div[id^=reader-helper]{display:none!important}.modal-open{overflow:auto!important}._sf_adjust_body{padding-right:0!important}.super_copy_btns_div{position:fixed;width:154px;left:10px;top:45%;background:#e7f1ff;border:2px solid #4595d5;font-weight:600;border-radius:2px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;z-index:5000}.super_copy_btns_logo{width:100%;background:#4595d5;text-align:center;font-size:12px;color:#e7f1ff;line-height:30px;height:30px}.super_copy_btns_btn{display:block;width:128px;height:28px;background:#7f5711;border-radius:4px;color:#fff;font-size:12px;border:0;outline:0;margin:8px auto;font-weight:700;cursor:pointer;opacity:.9}.super_copy_btns_btn:hover{opacity:.8}.super_copy_btns_btn:active{opacity:1}</style></head>
+		<body>
+		<style>
+.result{
+	padding:20px;
+}
+.s-h3{
+	border-bottom:1px solid #d4d4d4;
+	padding-bottom:10px;
+	padding-left:10px;
+	font-size:16px;
+}
+.score-ul {
+	margin-left: 18px;
+	padding-left: 0px;
+}
+.score-ul li{
+	list-style: none;
+	font-size: 16px;
+	color: #313131;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.score-ul li:before {content: "";background: url("https://img.lscat.cn/FlHi-Hg-pD9MDfFk5scNehbnYb1U.png");background-size: 100%;width: 14px;background-repeat: no-repeat;height: 14px;display: inline-block;vertical-align: middle;margin-top: -4px;}
+.info{
+	color:gray;
+	text-align:center;
+}
+</style>
+<style>
+input.form-control.keyword {
+    margin-bottom: 10px;
+}
+.info{
+	margin-top:50px;
+}
+</style>
+<h3 class="s-h3">
+	竞赛证书查询：
+</h3>
+<div style="margin-top:30px;">
+
+	<div class="result"><style>
+.table-score-search tr td:nth-of-type(odd){
+	background: #3379b7;
+	color: #ffffff;
+}
+</style>
+				<table class="table-score-search table table-hover table-bordered" style="max-width: 400px;
+					    margin-left: auto;
+							    margin-right: auto;
+									margin-top: 30px;
+									text-align:center;
+											    "> 
+						<tbody><tr>
+							<td>
+								姓名
+							</td>
+							<td>
+								顾陆赟
+							</td>
+						</tr>
+						<tr>
+							<td>
+								证件号
+							</td>
+							<td>
+									32**************31
+							</td>
+						</tr>
+						<tr>
+							<td>
+								竞赛编号
+							</td>
+							<td>
+									C21023138204432
+							</td>
+						</tr>
+						<tr><td>竞赛结果</td><td>三等奖</td></tr><tr><td>指导老师</td><td>黄亚茜 </td></tr><tr><td>获奖证书</td><td>有（电子版）登录PC端可下载</td></tr>
+				</tbody></table></div>
+
+</div>
+<div class="info">
+	如信息登记有误，请联系管理员（电话：010-59507218）。
+</div>
+<script>
+	$.get(config.rootUrl+"match/public/search-score2?token=116242616aa8a6c546d1a7a5144f3937&ticket_id=C21023138204432").done(function(r){
+	if(r['error']==0){
+		$(".result").html(r['html']);
+	}else{
+		$.tools.showErrorMessage("不存在查询结果！");
+	}
+});
+</script>
+	
+	<script src="https://s.lscat.cn/assets/js-compress/396fe57d6c2444cff897245e93bb5662.js?v=1680579771"></script>
+<script src="chrome-extension://cakceedajpopjhclmeobmeedhdficlpd/static/js/inject.js" type="text/javascript" async=""></script></body></html>
